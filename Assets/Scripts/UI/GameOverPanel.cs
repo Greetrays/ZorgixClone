@@ -9,13 +9,15 @@ using TMPro;
 public class GameOverPanel : MonoBehaviour
 {
     [SerializeField] private PlayerHealth _player;
+    [SerializeField] private TMP_Text _playerMoney;
     [SerializeField] private float _delayBetweenShowPanel;
+    [SerializeField] private TMP_Text _scorePerLevel;
 
     private CanvasGroup _panel;
 
     private void OnEnable()
     {
-        _player.Dying += OnDying;
+        _player.Died += OnDying;
     }
 
     private void Start()
@@ -25,7 +27,7 @@ public class GameOverPanel : MonoBehaviour
 
     private void OnDisable()
     {
-        _player.Dying += OnDying;
+        _player.Died += OnDying;
     }
 
     public void OpenMenu()
@@ -49,6 +51,7 @@ public class GameOverPanel : MonoBehaviour
         _panel.blocksRaycasts = true;
         _panel.interactable = true;
         Time.timeScale = 0;
+        _scorePerLevel.text = _playerMoney.text;
     }
 
     private IEnumerator ChangeTimeScale()

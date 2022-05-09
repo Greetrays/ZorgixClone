@@ -30,18 +30,6 @@ public class MenuLoader : MonoBehaviour
         _mainMenu.interactable = false;
     }
 
-    private void OnClosedImproveMenu()
-    {
-        _mainMenu.blocksRaycasts = true;
-        _mainMenu.interactable = true;
-    }
-
-    public void LoadImproveMenu()
-    {
-        Close();
-        OpenedImproveMenu?.Invoke();
-    }
-
     public void ExitGame()
     {
         Application.Quit();

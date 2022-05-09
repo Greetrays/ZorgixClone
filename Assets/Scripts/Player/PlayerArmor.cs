@@ -19,7 +19,7 @@ public class PlayerArmor : PlayerStats
 
     private void Start()
     {
-        CurrentStats = MaxStats;
+        CurrentValue = MaxStats;
         _playerShield = GetComponent<PlayerShield>();
     }
 
@@ -27,35 +27,8 @@ public class PlayerArmor : PlayerStats
     {
         if (collision.TryGetComponent(out Armor armore))
         {
-            Refilling();
-
-            if (CurrentStats + armore.Count > MaxStats)
-            {
-                int newValueStats = MaxStats - CurrentStats;
-                Change(newValueStats);
-            }
-            else if (CurrentStats + armore.Count <= MaxStats)
-            {
-                Change(armore.Count);
-            }
-        }
-    }
-
-    public void TakeDamage(int damage)
-    {
-        if (_playerShield.IsShield == false)
-        {
-            Decreasing();
-
-            if (CurrentStats > 0)
-            {
-                Change(-damage);
-
-                if (CurrentStats < 0)
-                {
-                    CurrentStats = 0;
-                }
-            }
+            Refill();
+            Change(armore.Count);
         }
     }
 }
