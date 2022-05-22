@@ -6,7 +6,7 @@ public class ObjectMover : MonoBehaviour
 {
     [SerializeField] private float _minSpeedMove;
     [SerializeField] private float _maxSpeedMove;
-    [SerializeField] private float _minDistanceShieldTrigger;
+    [SerializeField] private float _minDistanceEnergyBarrierTrigger;
     [SerializeField] private ContactFilter2D _contactFilter2D;
     [SerializeField] private Vector3 _startDirection;
 
@@ -31,7 +31,7 @@ public class ObjectMover : MonoBehaviour
     private void Update()
     {
         transform.position += _direction * _speedMove * Time.deltaTime;
-        int countCollision = _rigidbody.Cast(Vector2.left, _contactFilter2D, _collisionObjects, _minDistanceShieldTrigger);
+        int countCollision = _rigidbody.Cast(Vector2.left, _contactFilter2D, _collisionObjects, _minDistanceEnergyBarrierTrigger);
 
         if (_player.IsActive)
         {

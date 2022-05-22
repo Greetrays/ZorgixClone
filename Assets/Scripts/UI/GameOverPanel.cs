@@ -27,7 +27,7 @@ public class GameOverPanel : MonoBehaviour
 
     private void OnDisable()
     {
-        _player.Died += OnDying;
+        _player.Died -= OnDying;
     }
 
     public void OpenMenu()

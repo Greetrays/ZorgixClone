@@ -17,7 +17,7 @@ public class ObjectSpawner : Pool
         {
             if (TryGetRandomObject(out GameObject gameObj))
             {
-                TrySpawn(gameObj);
+                Spawn(gameObj);
             }
           
             DisableObject();
@@ -32,7 +32,7 @@ public class ObjectSpawner : Pool
         _delay = delay;
     }
 
-    private void TrySpawn(GameObject gameObject)
+    private void Spawn(GameObject gameObject)
     {
         gameObject.SetActive(true);
         gameObject.transform.position = new Vector2(Container.position.x, Random.Range(_minSpawnPoint, _maxSpawnPoint));

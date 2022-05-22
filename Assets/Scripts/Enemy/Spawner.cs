@@ -74,11 +74,6 @@ public class Spawner : Pool
         }
     }
 
-    public void NextWaveDevelopButton()
-    {
-        StartNextWave();
-    }
-
     private void StartNextWave()
     {
         TryDestroyObjects();

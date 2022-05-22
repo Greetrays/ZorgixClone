@@ -8,9 +8,8 @@ public abstract class PlayerStats : MonoBehaviour
     [SerializeField] protected ParticleSystem _particle;
     [SerializeField] private int _maxValue;
 
-    public int CurrentValue { get; protected set; }
-
     public event UnityAction ChangeValue;
+    public int CurrentValue { get; protected set; }
 
     public int MaxStats
     {
@@ -24,10 +23,24 @@ public abstract class PlayerStats : MonoBehaviour
         }
     }
 
+    private void OnValidate()
+    {
+        if (_maxValue <= 0)
+        {
+            _maxValue = 25;
+        }
+    }
+
     public virtual void TakeDamage(int damage)
     {
         Decreasing();
         Change(-damage);
+    }
+
+    protected void TakeRefill(int value)
+    {
+        Refill();
+        Change(value);
     }
 
     protected void Change(int value)
