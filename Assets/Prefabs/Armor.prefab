@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minSpeedMove: 7
   _maxSpeedMove: 8
-  _minDistanceShieldTrigger: 4
+  _minDistanceEnergyBarrierTrigger: 2.5
   _contactFilter2D:
     useTriggers: 0
     useLayerMask: 1
@@ -197,16 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa5248e31b65be74dbcd32023e325472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _icon: {fileID: 21300000, guid: b22ad26c507379f41bf3be911d83b878, type: 3}
-  _lable: "\u0412\u043E\u043B\u044C\u0444\u0440\u0430\u043C"
-  _level: 1
-  _price: 15
-  _markup: 10
-  _description: "\u041F\u0440\u043E\u0447\u043D\u044B\u0439 \u043C\u0435\u0442\u0430\u043B\u043B,
-    \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0443\u043A\u0440\u0435\u043F\u043B\u044F\u0435\u0442
-    \u043A\u043E\u0440\u043F\u0443\u0441 \u043A\u043E\u0440\u0430\u0431\u043B\u044F"
   _currentCount: 10
-  _boostCount: 5
 --- !u!95 &6058853927615234942
 Animator:
   serializedVersion: 3

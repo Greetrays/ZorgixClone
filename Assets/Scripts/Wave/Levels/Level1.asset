@@ -26,6 +26,9 @@ MonoBehaviour:
   - _template: {fileID: 8913456926058168828, guid: 97b9490654118224ab2d14c8fb37dc2b,
       type: 3}
     _count: 1
+  - _template: {fileID: 2182581149325872625, guid: 4b4fea8de6d246e439a887f47cfceb96,
+      type: 3}
+    _count: 1
   _duration: 20
   _delayBetweenSpawnUpgradeObjects: 1
   _delayBetweenSpawnEnemy: 0.2

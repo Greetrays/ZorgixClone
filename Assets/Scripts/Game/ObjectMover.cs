@@ -35,6 +35,7 @@ public class ObjectMover : MonoBehaviour
 
         if (_player.IsActive)
         {
+            Debug.Log(countCollision);
             if (countCollision > 0)
             {
                 float offsetMoveY = 0.5f;

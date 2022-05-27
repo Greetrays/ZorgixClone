@@ -115,7 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minSpeedMove: 5
   _maxSpeedMove: 7
-  _minDistanceShieldTrigger: 4
+  _minDistanceEnergyBarrierTrigger: 2.5
   _contactFilter2D:
     useTriggers: 0
     useLayerMask: 1
