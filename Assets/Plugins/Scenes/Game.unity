@@ -5781,7 +5781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17111307, y: 0.033349104}
   m_AnchorMax: {x: 0.8301481, y: 0.29989806}
-  m_AnchoredPosition: {x: -1.5979004, y: -1.5}
+  m_AnchoredPosition: {x: -1.5979004, y: -1.500061}
   m_SizeDelta: {x: 3.1956787, y: 4.4777527}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &412593850
@@ -11569,7 +11569,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "!\u041D\u041E\u0412\u0410\u042F \u0412\u041E\u041B\u041D\u0410!"
+  m_Text: 
 --- !u!222 &603957968
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12457,9 +12457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 1747004991}
-  _playerMoney: {fileID: 0}
   _delayBetweenShowPanel: 1
-  _scorePerLevel: {fileID: 1175698370}
 --- !u!225 &982009898
 CanvasGroup:
   m_ObjectHideFlags: 0

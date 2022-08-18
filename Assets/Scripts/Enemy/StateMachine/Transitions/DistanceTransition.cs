@@ -6,9 +6,12 @@ public class DistanceTransition : Transition
 
     private void Update()
     {
-        if (Vector2.Distance(Target.transform.position, transform.position) <= _distance)
+        if (Target != null)
         {
-            NeedTransit = true;
+            if (Vector2.Distance(Target.transform.position, transform.position) <= _distance)
+            {
+                NeedTransit = true;
+            }
         }
     }
 }

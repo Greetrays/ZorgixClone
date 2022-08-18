@@ -9,9 +9,7 @@ using TMPro;
 public class GameOverPanel : MonoBehaviour
 {
     [SerializeField] private PlayerHealth _player;
-    [SerializeField] private TMP_Text _playerMoney;
     [SerializeField] private float _delayBetweenShowPanel;
-    [SerializeField] private TMP_Text _scorePerLevel;
 
     private CanvasGroup _panel;
 
@@ -51,7 +49,6 @@ public class GameOverPanel : MonoBehaviour
         _panel.blocksRaycasts = true;
         _panel.interactable = true;
         Time.timeScale = 0;
-        _scorePerLevel.text = _playerMoney.text;
     }
 
     private IEnumerator ChangeTimeScale()
