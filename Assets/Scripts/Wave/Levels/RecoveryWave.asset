@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: RecoveryWave
   m_EditorClassIdentifier: 
   _templatesEnemys:
-  - _template: {fileID: 0}
-    _count: 0
+  - _template: {fileID: 5272385488790594081, guid: 5b81aa4118c8bc7429b8b8c33047571d,
+      type: 3}
+    _count: 20
   _templatesUpgradeObjects:
   - _template: {fileID: 5614241820889140994, guid: 802c75d9b3300aa48a658d0116a2f7a0,
       type: 3}
@@ -24,4 +25,4 @@ MonoBehaviour:
     _count: 5
   _duration: 5
   _delayBetweenSpawnUpgradeObjects: 0.1
-  _delayBetweenSpawnEnemy: 0
+  _delayBetweenSpawnEnemy: 0.1

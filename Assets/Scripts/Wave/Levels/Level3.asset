@@ -16,6 +16,9 @@ MonoBehaviour:
   - _template: {fileID: 8698963343957509898, guid: 0d3af3406376d6f42ac4e5ad1b32f716,
       type: 3}
     _count: 30
+  - _template: {fileID: 5272385488790594081, guid: 5b81aa4118c8bc7429b8b8c33047571d,
+      type: 3}
+    _count: 15
   _templatesUpgradeObjects:
   - _template: {fileID: 5272385488790594081, guid: 27c2f088f2cca66459688100a8585e83,
       type: 3}

@@ -15,7 +15,10 @@ MonoBehaviour:
   _templatesEnemys:
   - _template: {fileID: 1293785672839638407, guid: bf3001991d16d8c47921c1bf007a6f10,
       type: 3}
-    _count: 40
+    _count: 60
+  - _template: {fileID: 5272385488790594081, guid: 5b81aa4118c8bc7429b8b8c33047571d,
+      type: 3}
+    _count: 20
   _templatesUpgradeObjects:
   - _template: {fileID: 5614241820889140994, guid: 802c75d9b3300aa48a658d0116a2f7a0,
       type: 3}
